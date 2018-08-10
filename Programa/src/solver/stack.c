@@ -8,12 +8,12 @@ Stack *stack_init()
   /* Aqui agrega tu código */
 }
 
-void push(int row, int col, int color)
+void push(Stack* stack, int color)
 {
   /* Aqui agrega tu código */
 }
 
-int pop(int row, int col)
+int pop(Stack* stack)
 {
   /* Aqui agrega tu código */
 }

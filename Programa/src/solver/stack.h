@@ -19,8 +19,8 @@ struct stack
 
 Stack *stack_init();
 
-void push(int row, int col, int color);
+void push(Stack* stack, int color);
 
-int pop(int row, int col);
+int pop(Stack* stack);
 
 void destroy(Stack *stack);
