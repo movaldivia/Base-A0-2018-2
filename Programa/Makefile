@@ -7,12 +7,7 @@
 ###############################################################################
 
 # El compilador a usar: Gnu C Compiler, Standard 2011 with GNU extensions
-UNAME := $(shell uname)
-ifeq ($(UNAME), Darwin)
-	CC = gcc-5 -std=gnu11
-else ($(UNAME), Linux)
-	CC = gcc -std=gnu11
-endif
+CC=gcc -std=gnu11
 # La carpeta donde va todo el código
 SRC=src
 # La carpeta donde van todos los archivos de objeto
@@ -39,6 +34,10 @@ CFLAGS=-Wunused -Wall $(OPT)
 
 # Matemáticas (C Math library)
 MTH=-lm
+# Interfaz gráfica GTK+
+# GTK=`pkg-config --cflags --libs gtk+-3.0`
+# Portable Network Graphics (PNG)
+# PNG=-lpng
 
 LIB=$(MTH)
 
